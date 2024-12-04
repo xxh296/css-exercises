@@ -1,0 +1,15 @@
+.blkbutton,
+.ylwbutton {
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;
+
+}
+
+.blkbutton {
+    background-color: black;
+    color: white;
+}
+
+.ylwbutton {
+    background-color: yellow;
+}
