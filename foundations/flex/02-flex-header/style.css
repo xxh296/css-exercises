@@ -1,8 +1,8 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+    /* Added */
   display: flex;
-  /* Added */
   justify-content: space-between;
   align-items: center;
   padding: 8px;
@@ -21,6 +21,8 @@ ul {
   list-style-type: none;
   /* Added: remove space on left */
   padding: 0;
+  /* this 'gap' does not seem to have any effect in my solution */
+  /* gap: 8px; */
 }
 
 /* Added: display lists horizontally */
