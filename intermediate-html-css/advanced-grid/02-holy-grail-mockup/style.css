@@ -103,8 +103,8 @@
   gap: 4px;
   grid-template-areas: 
   "header header"
-  ". ."
-  ". ."
+  "sidebar nav"
+  "sidebar article"
   "footer footer"
   ;
 }
@@ -143,4 +143,17 @@ li {
 
 .footer {
   grid-area: footer;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.article {
+  grid-area: article;
+
 }
