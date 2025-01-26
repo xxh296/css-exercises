@@ -89,3 +89,58 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+
+
+/* ########################### solving ################# */
+/* * {
+  outline: solid red;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+  grid-template-areas: 
+  "header header"
+  ". ."
+  ". ."
+  "footer footer"
+  ;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1rf 4rf;
+  grid-template-areas: 
+  "logo menu";
+}
+
+.logo {
+  grid-area: logo;
+  display: inline-grid;
+  justify-items: left;
+}
+
+.menu {
+  grid-area: menu;
+  display: inline-grid;
+  justify-items: right;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  /* padding: 0 3rem; */
+  /* padding: 0 5vw; */
+  padding: 0 max(3rem, 3vw);
+}
+
+.footer {
+  grid-area: footer;
+}
