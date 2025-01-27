@@ -90,10 +90,6 @@
 }
 
 /* solution */
-/* * {
-  outline: solid silver;
-} */
-
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -109,22 +105,24 @@
 .header {
   grid-area: header;
   display: grid;
-  grid-template-columns: 1rf 4rf;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas: 
   "logo menu";
 }
 
 .logo {
   grid-area: logo;
-  display: inline-grid;
-  justify-items: left;
+  justify-self: start;
 }
 
 .menu {
   grid-area: menu;
-  display: inline-grid;
-  justify-items: right;
-  align-items: center;
+  align-self: center;
+}
+
+.menu > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 ul {
@@ -155,9 +153,9 @@ ul {
   grid-area: nav;
 }
 
-.nav > ul li {
-  display: inline-grid;
-  padding: 0 max(5rem, 5vw);
+.nav > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .article {
