@@ -145,6 +145,13 @@ ul {
 
 .sidebar {
   grid-area: sidebar;
+  display: grid;
+  gap: 50px;
+}
+
+.sidebar > * {
+  display: grid;
+  align-items: center;
 }
 
 .nav {
