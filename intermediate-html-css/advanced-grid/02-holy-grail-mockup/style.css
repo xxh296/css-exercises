@@ -36,7 +36,6 @@
   border-radius: 10px;
 }
 
-
 .sidebar .side-content {
   background-color: white;
   color: black;
@@ -90,12 +89,10 @@
   font-weight: normal;
 }
 
-
-
-/* ########################### solving ################# */
-* {
+/* solution */
+/* * {
   outline: solid silver;
-}
+} */
 
 .container {
   display: grid;
@@ -135,7 +132,7 @@ ul {
 }
 
 .menu > ul li {
-  display: inline-block;
+  display: inline-grid;
   padding: 0 max(3rem, 3vw);
 }
 
@@ -159,22 +156,17 @@ ul {
 }
 
 .nav > ul li {
-  display: inline-block;
+  display: inline-grid;
   padding: 0 max(5rem, 5vw);
 }
 
-/* .nav > ul {
-  display: grid-inline;
-  grid-template-columns: repeat(3, 1rf);
-  grid-template-areas: 
-  " li li li";
-} */
-
-/* .nav > ul li {
-  grid-area: li;
-} */
-
 .article {
   grid-area: article;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
 
+.article .card {
+  height: 200px;
 }
